@@ -6,9 +6,11 @@ export const MyteHeader = () => {
   return (
     <div className="Myte-Header">
       <div className="Myte-Header-Logo">wlw : Raymond Timothy Harris</div>
-      <div><MyteFilter></MyteFilter></div>
-      <div ><a href='https://www.github.com/raymondtharris'>Git</a></div>
-      <div>About</div>
+      <div className="MyteHeaderNav">
+        <MyteFilter></MyteFilter>
+        <button >GitHub</button>
+        <button >About</button>
+      </div>
     </div>
   )
 }

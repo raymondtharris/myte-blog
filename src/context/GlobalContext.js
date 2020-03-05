@@ -3,7 +3,8 @@ import AppReducer from './AppReducer';
 
 const initialState = {
     postFilter: ["Code", "Music", "Fashion", "Other"],
-    postsDB : [{name:"Produce in Phase", id:4, postType:"Music"},{name:"New Challenges in React", id:3, postType:"Code"},{name:"Building Myte", id:2, postType:"Code"},{name:"Welcome", id:1, postType:"Other"}]
+    postsDB : [{name:"Produce in Phase", id:4, postType:"Music"},{name:"New Challenges in React", id:3, postType:"Code"},{name:"Building Myte", id:2, postType:"Code"},{name:"Welcome", id:1, postType:"Other"}],
+    aboutOpen : false
 }
 
 export const GlobalContext = createContext(initialState);
@@ -24,7 +25,7 @@ export const GlobalProvider = ({ children }) => {
         })
     }
 
-    return (<GlobalContext.Provider value={{postFilter: state.postFilter, postsDB: state.postsDB, togglePosts}}>
+    return (<GlobalContext.Provider value={{postFilter: state.postFilter, postsDB: state.postsDB, aboutOpen : state.aboutOpen, togglePosts}}>
         {children}
     </GlobalContext.Provider>);
 }
