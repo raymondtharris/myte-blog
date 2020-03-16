@@ -1,7 +1,7 @@
 import React from 'react'
-import './MyteAbout.css'
+import './MytePage.css'
 
-export const MyteAbout = () => {
+export const MytePage = () => {
     return (
         <div className="MyteAbout">
             <div className="MyteAboutPage">

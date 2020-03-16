@@ -4,7 +4,7 @@ import { MyteHeader } from './components/MyteHeader/MyteHeader'
 
 import { GlobalProvider} from './context/GlobalContext'
 import { MytePostList } from './components/MytePostList/MytePostList';
-import { MyteAbout } from './components/MyteAbout/MyteAbout';
+import { MytePage } from './components/MytePage/MytePage';
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
     <GlobalProvider>
       <MyteHeader  ></MyteHeader>
       <MytePostList></MytePostList>
-      <MyteAbout></MyteAbout>
+      <MytePage></MytePage>
     </GlobalProvider>
   );
 }
